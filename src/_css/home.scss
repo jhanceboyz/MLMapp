@@ -1,0 +1,28 @@
+.container{
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: black;
+}
+.header{
+    height: 10%;
+    width: 100%;
+    background-color: red;
+    align-items: center;
+    font-size: 50px;
+}
+.header_title{
+    font-size: 40px;
+    margin-top: 30px;
+}
+.body{
+    height: 80%;
+    width: 100%;
+    background-color: yellow;
+}
+.footer{
+    height: 10%;
+    width: 100%;
+    background-color: yellowgreen;
+}
