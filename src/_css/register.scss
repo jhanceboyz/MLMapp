@@ -1,0 +1,68 @@
+.container{
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: black;
+}
+.header{
+    height: 30%;
+    width: 100%;
+    background-color: white;
+    align-items: center;
+    font-size: 50px;
+    justify-content: flex-end;
+}
+.header_title{
+    font-size: 40px;
+    margin-top: 30px;
+}
+.body{
+    height: 70%;
+    width: 100%;
+    background-color: white;
+
+    align-items: center;
+}
+.username{
+    width: 80%;
+    height: 50px;
+    text-align: center;
+    margin-top: 10px;
+    border: 2px solid rgb(255, 255, 255);
+    border-bottom-color:rgb(59, 57, 57);
+    font-size: 20px;
+}
+.password{
+    width: 80%;
+    height: 50px;
+    text-align: center;
+    margin-top: 10px;
+    border: 2px solid white;
+    border-bottom-color: rgb(59, 57, 57);
+    font-size: 20px;
+}
+.button{
+    background-color: rgb(255, 81, 0);
+    width: 80%;
+    text-align: center;
+    justify-content: center;
+    margin-top: 10px;;
+}
+.line{
+    font-size: 30px;
+    font-weight: 800;
+    color: rgb(255, 81, 0);
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.wallpaper{
+    height: 200px;
+    width: 200px;
+}
+.alreadyhaveaccount{
+    padding: 0;
+    background-color: white;
+    height: 25px;
+    margin-top: 10px;
+}

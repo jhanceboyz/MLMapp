@@ -1,30 +1,32 @@
 import React from 'react';
 import {View, Text, Root, Container, Button} from 'native-base';
-import styles from '../_css/login.scss'
+import styles from '../_css/register.scss'
 import {TextInput, Image} from 'react-native'
 
-function login() {
+function Register() {
   return (
     <Container style={styles.container}>
       <View style={styles.header}>
       <Image
           style={styles.wallpaper}
-          source={require('../_assets/images/mainpagewallpaper.png')}
+          source={require('../_assets/images/teamwork.png')}
         />
       </View>
 
       <View style={styles.body}>
-          <Text style={styles.line}>Marketting Next Level</Text>
+          <Text style={styles.line}>Welcome</Text>
           <TextInput style = {styles.username} placeholder= "Enter E-mail"></TextInput>
           <TextInput style = {styles.username} placeholder= "Enter Password"></TextInput>
+          <TextInput style = {styles.username} placeholder= "Confirm Password"></TextInput>
+          <TextInput style = {styles.username} placeholder= "Partner of......"></TextInput>
           <Button style = { styles.button
-          }><Text>Login</Text></Button>
+          }><Text>Register</Text></Button>
           <Button style= {styles.alreadyhaveaccount}>
-              <Text style={{fontWeight: '600' ,color: 'black', padding: 0, margin: 0}}>Don't have an account!</Text>
+              <Text style={{fontWeight: '600' ,color: 'black', padding: 0, margin: 0}}>Already have an account!</Text>
             </Button>
       </View>
     </Container>
   );
 }
 
-export default login;
+export default Register;

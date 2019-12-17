@@ -1,20 +1,11 @@
-import React from 'react';
-import {View, Text, Root, Container} from 'native-base';
-import styles from '../_css/home.scss'
+import React from './node_modules/react'
+import { View, Text } from 'native-base'
 function home() {
-  return (
-    <Container style={styles.container}>
-      <View style={styles.header}>
-          <Text style={styles.header_title}>Home</Text>
-      </View>
-      <View style={styles.body}>
-          <Text>Body</Text>
-      </View>
-      <View style={styles.footer}>
-          <Text>Footer</Text>
-      </View>
-    </Container>
-  );
+    return (
+        <View>
+            <Text>HOME</Text>
+        </View>
+    )
 }
 
-export default home;
+export default home
