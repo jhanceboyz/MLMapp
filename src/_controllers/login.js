@@ -2,8 +2,7 @@ import React from 'react';
 import {View, Text, Root, Container, Button} from 'native-base';
 import styles from '../_css/login.scss'
 import {TextInput, Image} from 'react-native'
-
-function login() {
+const login= (props) => {
   return (
     <Container style={styles.container}>
       <View style={styles.header}>
@@ -19,12 +18,20 @@ function login() {
           <TextInput style = {styles.username} placeholder= "Enter Password"></TextInput>
           <Button style = { styles.button
           }><Text>Login</Text></Button>
-          <Button style= {styles.alreadyhaveaccount}>
+          <Button 
+          onPress = {() => props.navigation.navigate('register')}
+          style= {styles.alreadyhaveaccount}>
               <Text style={{fontWeight: '600' ,color: 'black', padding: 0, margin: 0}}>Don't have an account!</Text>
             </Button>
       </View>
     </Container>
   );
+}
+
+login.navigationoption = ({}) => {
+  return{
+    header: null
+  }
 }
 
 export default login;

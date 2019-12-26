@@ -1,9 +1,9 @@
 import React from 'react';
-import Register from '../src/_controllers/Register'
-import {Root, Text, View, Header} from 'native-base';
+import Navigator from './_controllers/navigator';
+import Login from './_controllers/login';
 
 function App() {
-  return <Register />
+  return <Navigator />
 }
 
 export default App;
