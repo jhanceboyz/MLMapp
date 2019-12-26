@@ -1,20 +1,26 @@
-import { createStackNavigator, createAppContainer } from 'react-navigation';
+import {createStackNavigator, createAppContainer} from 'react-navigation';
 import Login from './login';
 import Register from './Register';
 
 const navigator = createStackNavigator(
-    {
-        login: {screen: Login,
-                    navigationOptions: {
-                        header: null,
-                        tabBarVisible: true ,
-                    }
-                },
-        register: Register,
+  {
+    login: {
+      screen: Login,
+      navigationOptions: {
+        header: null,
+        tabBarVisible: true,
+      },
     },
-    {
-        initialRouteName: 'login',
+    register: {
+      screen: Register,
+      navigationOptions: {
+        title: 'Register',
+      },
     },
-)
+  },
+  {
+    initialRouteName: 'login',
+  },
+);
 
-export default createAppContainer(navigator)
+export default createAppContainer(navigator);
