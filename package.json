@@ -13,7 +13,7 @@
     "babel-plugin-react-native-classname-to-style": "^1.2.2",
     "babel-plugin-react-native-platform-specific-extensions": "^1.1.1",
     "native-base": "^2.13.8",
-    "node-sass": "^4.13.0",
+    "node-sass": "^7.0.0",
     "react": "16.9.0",
     "react-native": "0.61.5",
     "react-native-gesture-handler": "^1.5.2",
